@@ -1,6 +1,6 @@
 // Import the Squelize constructor from the library
-const Sequelize = require('sequelize');
-require('dotenv').config();
+const Sequelize = require("sequelize");
+require("dotenv").config();
 
 // Create connect to the database
 const sequelize = new Sequelize(
@@ -8,8 +8,8 @@ const sequelize = new Sequelize(
   process.env.DB_USER,
   process.env.DB_PW,
   {
-    host: 'localhost',
-    dialect: 'mysql',
+    host: "127.0.0.1",
+    dialect: "mysql",
     port: 3306,
   }
 );
